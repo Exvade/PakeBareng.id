@@ -1,5 +1,5 @@
 import { useState } from "react"
-import faqImg from '../assets/faq-img.png'
+import faqImg from '../assets/faq-img.webp'
 import faqData from '../data/faqData.json'
 
 export default function FAQ() {
