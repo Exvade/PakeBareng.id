@@ -17,22 +17,22 @@ export default function Navbar() {
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-green">
+                <a href="aboutus" className="hover:text-green">
                   Tentang Kami
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-green">
+                <a href="product" className="hover:text-green">
                   Produk
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-green">
+                <a href="testimoni" className="hover:text-green">
                   Testimoni
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-green">
+                <a href="faq" className="hover:text-green">
                   FAQ
                 </a>
               </li>
