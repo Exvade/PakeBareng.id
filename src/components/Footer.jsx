@@ -23,7 +23,7 @@ export default function Footer() {
           <ul className='flex gap-3'>
             <a href="https://discord.gg/WXTzdeaTNA" target='_blank' className='flex items-center justify-center w-8 h-8 bg-white rounded-full'><img src={discord} alt="" /></a>
             <a href="https://www.instagram.com/pakebareng.id/" target='_blank' className='flex items-center justify-center w-8 h-8 bg-white rounded-full'><img src={instagram} alt="" /></a>
-            <a href="#" className='flex items-center justify-center w-8 h-8 bg-white rounded-full'><img src={tiktok} alt="" /></a>
+            <a href="https://www.tiktok.com/@pakebareng.id" target='_blank' className='flex items-center justify-center w-8 h-8 bg-white rounded-full'><img src={tiktok} alt="" /></a>
           </ul>
         </div>
         <p className='w-[95%] max-w-[702px] text-white text-center text-xs'>Pakebareng adalah layanan untuk mengurangi beban biaya langganan premium pada platform tertentu. Temukan partner untuk menghemat pengeluaranmu!</p>
