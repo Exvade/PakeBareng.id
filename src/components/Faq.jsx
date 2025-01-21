@@ -6,7 +6,7 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState(null);
 
   return (
-    <section id="faq" className="w-full bg-dark py-12 px-4 md:px-6">
+    <section id="faq" className="w-full px-4 py-12 bg-dark md:px-6">
       <div className="flex items-center max-w-6xl gap-20 mx-auto">
         <div className="hidden md:block w-[25%]">
           <img src={faqImg} alt="" className="w-full" />
