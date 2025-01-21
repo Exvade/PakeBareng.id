@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import testimonials from '../data/testimoni';
 
 const TestimonialCard = ({ quote, author, role, pic }) => (
-  <div id="testimoni" className="flex-shrink-0 w-[300px] md:w-[500px] p-6 bg-white border rounded-lg">
+  <div className="flex-shrink-0 w-[300px] md:w-[500px] p-6 bg-white border rounded-lg">
     <blockquote className="mb-6 text-lg text-black">"{quote}"</blockquote>
     <div className="flex items-center gap-3">
       <img src={pic} alt={author} className="object-cover w-10 h-10 rounded-full" />
@@ -18,7 +18,7 @@ const Testimoni = () => {
   const duplicatedTestimonials = [...testimonials, ...testimonials];
 
   return (
-    <div className="w-full py-16 overflow-hidden bg-dark">
+    <div className="w-full py-16 overflow-hidden bg-dark " id="testimoni">
       <div className="mx-auto">
         <div className="px-4">
           <h2 className="mb-4 text-2xl font-bold text-center text-white md:text-3xl">Yang mereka katakan tentang pakebareng.id?</h2>
