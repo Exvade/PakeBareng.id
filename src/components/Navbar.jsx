@@ -21,7 +21,7 @@ export default function Navbar() {
             <img src={logo} className="h-5 sm:h-7" alt="Logo Pakebareng" />
           </div>
           <div className="hidden md:block">
-            <ul className="flex space-x-8 text-sm sm:text-base text-white">
+            <ul className="flex space-x-10 text-sm sm:text-base text-white">
               <li>
                 <a href="/" className="hover:text-green">
                   Beranda
