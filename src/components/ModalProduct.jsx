@@ -19,8 +19,8 @@ export default function ModalProduct({ isOpen, onClose, product }) {
     <div className="fixed inset-0 z-50 flex flex-col items-center justify-center">
       <div className="absolute inset-0 bg-black/50" onClick={onClose} />
 
-      <div className="relative z-10 w-full max-w-4xl bg-white rounded-3xl">
-        <div className="flex items-center justify-between  px-6 py-4 border-b">
+      <div className="relative z-10 w-full max-w-[360px] md:max-w-4xl bg-white rounded-3xl">
+        <div className="flex items-center justify-between px-6 py-4 border-b">
           <h2 className="text-lg font-semibold text-gray-900">Rincian Biaya {product?.service}</h2>
           <button onClick={onClose} className="text-gray-400 hover:text-gray-500">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -33,7 +33,7 @@ export default function ModalProduct({ isOpen, onClose, product }) {
           <img src={product?.banner} alt={product?.service} className="w-full h-full object-cover object-center rounded-2xl" />
         </div>
 
-        <div className="flex flex-row items-stretch justify-center px-6 py-3 pb-6 space-x-4">
+        <div className="flex flex-col md:flex-row items-stretch justify-center px-4 md:px-6 py-3 pb-6 space-y-4 md:space-y-0 space-x-0 md:space-x-4">
           {product?.packages.map((pkg, index) => (
             <div key={index} className="flex flex-col border w-full border-gray-200 rounded-xl p-4 m">
               <h3 className="font-semibold text-gray-900 mb-3">{pkg.package_name}</h3>
