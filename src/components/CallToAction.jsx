@@ -7,7 +7,7 @@ export default function CallToAction() {
         <div className="space-y-8">
           {/* Header Section */}
           <div className="space-y-4">
-            <h2 className="text-center font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#98EBA6] to-[#78D792] text-2xl md:text-4xl hover:px-2 hover:scale-102 hover:-rotate-1 transition duration-500">
+            <h2 className="text-center font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#98EBA6] to-[#78D792] text-2xl md:text-4xl md:hover:px-2 hover:scale-102 hover:-rotate-1 transition duration-500">
               Yuk, Cari Teman untuk Patungan Akun Premium!
             </h2>
             <p className="text-center text-gray-300 text-sm md:text-lg max-w-4xl mx-auto transition-transform duration-500 hover:scale-102 ">
@@ -16,7 +16,7 @@ export default function CallToAction() {
           </div>
 
           <div className="flex justify-center">
-            <button className="group relative flex flex-row items-center px-32 py-3 rounded-2xl text-sm sm:text-base bg-[#324a54] hover:bg-[#233941] text-white cursor-pointer overflow-hidden transition-transform duration-500 hover:scale-102 active:scale-97">
+            <button className="group relative flex flex-row items-center px-12 md:px-32 py-3 rounded-2xl text-sm sm:text-base bg-[#324a54] hover:bg-[#233941] text-white cursor-pointer overflow-hidden transition-transform duration-500 hover:scale-102 active:scale-97">
               <div className="absolute inset-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 animate-gradient-x"></div>
               </div>
