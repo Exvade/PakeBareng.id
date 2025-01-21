@@ -53,7 +53,7 @@ export default function Navbar() {
             <div className="flex items-center space-x-3 ">
               <button className="group relative flex flex-row items-center px-6 py-2 rounded-full text-xs sm:text-sm bg-[#324a54] text-white cursor-pointer duration-300 overflow-hidden hover:bg-[#233941]">
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 nimate-gradient-xa"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 animate-gradient-x"></div>
                 </div>
 
                 <img src={discordIcon} className="h-5 sm:h-6 pr-2 relative transition-transform duration-300 group-hover:scale-110" alt="Icon Discord" />
