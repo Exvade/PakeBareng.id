@@ -33,25 +33,25 @@ export default function ModalProduct({ isOpen, onClose, product }) {
           <img src={product?.banner} alt={product?.service} className="w-full h-full object-cover object-center rounded-2xl" />
         </div>
 
-        <div className="flex flex-col md:flex-row items-stretch justify-center px-4 md:px-6 py-3 pb-6 space-y-4 md:space-y-0 space-x-0 md:space-x-4">
+        <div className="flex flex-col md:flex-row items-stretch justify-center px-4 md:px-6 py-2 pb-6 space-y-2 md:space-y-0 space-x-0 md:space-x-4">
           {product?.packages.map((pkg, index) => (
             <div key={index} className="flex flex-col border w-full border-gray-200 rounded-xl p-4 m">
-              <h3 className="font-semibold text-gray-900 mb-3">{pkg.package_name}</h3>
+              <h3 className="font-semibold text-sm md:text-base text-gray-900 mb-3">{pkg.package_name}</h3>
 
               <div className="flex-grow space-y-2">
-                <div className="flex justify-between text-sm">
+                <div className="flex justify-between text-xs md:text-sm">
                   <span className="text-gray-500">Harga Paket:</span>
                   <span className="text-gray-900 font-medium">Rp {pkg.price_package?.toLocaleString('id-ID')}</span>
                 </div>
 
                 {pkg.max_member > 1 && (
                   <div className="space-y-2">
-                    <div className="flex justify-between text-sm">
+                    <div className="flex justify-between text-xs md:text-sm">
                       <span className="text-gray-500">Jumlah anggota per grup:</span>
                       <span className="text-gray-900 font-medium">{pkg.max_member} member</span>
                     </div>
 
-                    <div className="flex justify-between text-sm">
+                    <div className="flex justify-between text-xs md:text-sm">
                       <span className="text-gray-500">Biaya patungan:</span>
                       <span className="text-gray-900 font-medium">
                         Rp {pkg.price_package?.toLocaleString()} ÷ {pkg.max_member} = Rp {pkg.price_package && pkg.max_member && Math.round((pkg.price_member = pkg.price_package / pkg.max_member)).toLocaleString('id-ID')}
@@ -60,7 +60,7 @@ export default function ModalProduct({ isOpen, onClose, product }) {
                   </div>
                 )}
 
-                <div className="flex justify-between text-sm">
+                <div className="flex justify-between text-xs md:text-sm">
                   <span className="text-gray-500">Biaya Admin:</span>
                   <span className="text-gray-900 font-medium">Rp {pkg.admin?.toLocaleString('id-ID')}</span>
                 </div>
@@ -68,7 +68,7 @@ export default function ModalProduct({ isOpen, onClose, product }) {
 
               <div className="mt-auto pt-2">
                 <hr className="mb-2" />
-                <div className="flex justify-between text-sm">
+                <div className="flex justify-between text-xs md:text-sm">
                   <span className="text-gray-500">Total Biaya:</span>
                   <span className="text-gray-900 font-medium">Rp {Math.round((pkg.amount = pkg.price_package / pkg.max_member + pkg.admin)).toLocaleString('id-ID')}</span>
                 </div>
