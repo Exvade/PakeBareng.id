@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import discordIcon from '../assets/discord-icon.png';
 
 export default function ModalProduct({ isOpen, onClose, product }) {
   useEffect(() => {

@@ -35,7 +35,7 @@ function ProductCard({ product }) {
   return (
     <>
       <div className={`h-full flex flex-col bg-white rounded-3xl ${isReady ? 'opacity-100 transition-transform duration-500 hover:scale-102 hover:shadow-[0_0_30px_1px_rgba(34,197,94,0.4)]' : 'opacity-20 cursor-not-allowed'}`}>
-        <div className="w-full h-32 sm:h-40 md:h-48 ">
+        <div className="w-full h-48 ">
           <img src={product.banner} alt={product.service} className={`w-full h-full object-cover object-center rounded-t-3xl  ${!isReady ? 'grayscale' : ''}`} />
         </div>
 
@@ -87,10 +87,10 @@ function ProductCard({ product }) {
 
 export default function ProductSection() {
   return (
-    <section className="w-full bg-dark py-12 px-4 md:px-6">
+    <section className="w-full bg-dark py-12 px-8 md:px-6">
       <div className="max-w-5xl mx-auto">
         <h2 className="mb-8 text-2xl font-semibold text-center text-white md:text-3xl">Layanan yang tersedia</h2>
-        <div className="grid grid-cols-1 gap-2 md:gap-4 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 md:gap-4 md:grid-cols-3">
           {productData.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
