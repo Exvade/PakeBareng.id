@@ -34,9 +34,9 @@ export default function ModalProduct({ isOpen, onClose, product }) {
           <img src={product?.banner} alt={product?.service} className="w-full h-full object-cover object-center rounded-2xl" />
         </div>
 
-        <div className="flex flex-row items-stretch justify-center px-6 py-3 space-x-4">
+        <div className="flex flex-row items-stretch justify-center px-6 py-3 pb-6 space-x-4">
           {product?.packages.map((pkg, index) => (
-            <div key={index} className="flex flex-col border w-full border-gray-200 rounded-xl p-4">
+            <div key={index} className="flex flex-col border w-full border-gray-200 rounded-xl p-4 m">
               <h3 className="font-semibold text-gray-900 mb-3">{pkg.package_name}</h3>
 
               <div className="flex-grow space-y-2">
@@ -76,16 +76,6 @@ export default function ModalProduct({ isOpen, onClose, product }) {
               </div>
             </div>
           ))}
-        </div>
-        <div className="px-6 pb-6">
-          <button className="w-full group relative flex flex-row justify-center items-center px-6 py-3 rounded-2xl text-xs sm:text-sm text-white bg-[#324a54] hover:bg-[#233941] cursor-pointer duration-300 overflow-hidden ">
-            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 nimate-gradient-xa"></div>
-            </div>
-
-            <img src={discordIcon} className="h-5 sm:h-6 pr-2 relative transition-transform duration-300 group-hover:scale-110" alt="Icon Discord" />
-            <span className="relative z-10 transition-all duration-300 group-hover:translate-y-0 ">Bergabung ke Grup</span>
-          </button>
         </div>
       </div>
     </div>

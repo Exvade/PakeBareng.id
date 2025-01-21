@@ -34,13 +34,13 @@ function ProductCard({ product }) {
 
   return (
     <>
-      <div className={`h-full flex flex-col ${isReady ? 'opacity-100 transition-transform duration-500 hover:scale-102' : 'opacity-20 cursor-not-allowed'}`}>
-        <div className="w-full h-32 sm:h-40 md:h-48 bg-white rounded-t-3xl">
+      <div className={`h-full flex flex-col bg-white rounded-3xl ${isReady ? 'opacity-100 transition-transform duration-500 hover:scale-102 hover:shadow-[0_0_30px_1px_rgba(34,197,94,0.4)]' : 'opacity-20 cursor-not-allowed'}`}>
+        <div className="w-full h-32 sm:h-40 md:h-48 ">
           <img src={product.banner} alt={product.service} className={`w-full h-full object-cover object-center rounded-t-3xl  ${!isReady ? 'grayscale' : ''}`} />
         </div>
 
         <div className="flex-grow bg-white p-4 sm:p-6 rounded-b-3xl flex flex-col">
-          <div className="mb-2 sm:mb-4">
+          <div className="mb-1 sm:mb-3">
             <h2 className={`text-lg sm:text-xl font-semibold ${isReady ? 'text-gray-900' : 'text-gray-400'}  `}>{product.service}</h2>
           </div>
 
@@ -69,7 +69,12 @@ function ProductCard({ product }) {
             ))}
           </div>
 
-          <button onClick={handleOpenModal} className={`w-full text-white py-2 sm:py-3 rounded-xl font-medium text-sm sm:text-base mt-auto ${isReady ? 'bg-green hover:bg-green-500' : 'bg-gray-300 text-gray-400 cursor-not-allowed'}`}>
+          <button
+            onClick={handleOpenModal}
+            className={`w-full text-white py-2 sm:py-3 rounded-xl font-medium text-sm sm:text-base mt-auto ${
+              isReady ? 'bg-green hover:bg-[#368F57] transition-transform duration-500 hover:scale-99 active:scale-97' : 'bg-gray-300 text-gray-400 cursor-not-allowed'
+            }`}
+          >
             {isReady ? 'Lihat rincian biaya' : 'Coming Soon'}
           </button>
         </div>

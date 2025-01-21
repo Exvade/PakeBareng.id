@@ -5,6 +5,8 @@ export default {
     extend: {
       scale: {
         102: '1.02',
+        99: '0.99',
+        97: '0.97',
       },
       colors: {
         dark: '#0F191E',
