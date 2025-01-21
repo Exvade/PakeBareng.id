@@ -17,7 +17,7 @@ export default function Navbar() {
     <nav className="bg-dark border-gray-200 w-full h-[60px] sm:h-[75px]">
       <div className="w-full h-full mx-auto px-6 sm:px-16">
         <div className="flex justify-between items-center h-full">
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 cursor-pointer">
             <img src={logo} className="h-5 sm:h-7" alt="Logo Pakebareng" />
           </div>
           <div className="hidden md:block">
