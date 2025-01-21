@@ -15,6 +15,10 @@ export default {
       fontFamily: {
         Poppins: 'Poppins',
       },
+      boxShadow: {
+        'custom-light': '0 1px 8px rgba(0, 0, 0, 0.06)',
+        'custom-mild': '0 1px 8px rgba(0, 0, 0, 0.02)',
+      },
       animation: {
         'gradient-x': 'gradient-x 3s ease infinite',
       },

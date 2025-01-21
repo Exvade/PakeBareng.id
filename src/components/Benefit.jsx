@@ -38,11 +38,11 @@ const benefitCards = [
 
 function BenefitCard({ title, description, icon, mainColor, shadowColor }) {
   return (
-    <div className="relative">
+    <div className="relative transition-transform duration-500 hover:scale-102">
       <div className="absolute inset-0 translate-x-2 translate-y-2 rounded-2xl" style={{ backgroundColor: shadowColor }} />
       <div className="relative h-full p-6 rounded-2xl" style={{ backgroundColor: mainColor }}>
         <div className="flex flex-col items-center justify-center gap-4">
-          <div className="w-[30%]">
+          <div className="w-[20%]">
             <img src={icon} className="w-full" />
           </div>
           <h3 className="text-xl font-semibold text-center text-white">{title}</h3>
@@ -56,8 +56,10 @@ function BenefitCard({ title, description, icon, mainColor, shadowColor }) {
 export default function BenefitsSection() {
   return (
     <section className="w-full bg-dark py-12 px-4 md:px-6">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="mb-8 text-2xl font-semibold text-center text-white md:text-3xl">Kenapa harus pakebareng.id?</h2>
+      <div className="flex flex-col items-center max-w-6xl mx-auto">
+        <div className="w-[490px]">
+          <h2 className="mb-8 text-2xl font-semibold text-center text-white md:text-3xl hover:shadow-green hover:shadow-custom-light hover:px-3 hover:scale-102 hover:-rotate-1 transition duration-500">Kenapa harus pakebareng.id?</h2>
+        </div>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           {benefitCards.map((card, index) => (
             <BenefitCard key={index} {...card} />
