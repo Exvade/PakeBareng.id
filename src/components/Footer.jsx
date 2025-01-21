@@ -7,7 +7,7 @@ import tiktok from './icons/Tiktok.svg'
 export default function Footer() {
   return (
     <div className='flex flex-col items-center justify-center w-full px-4 py-6 bg-dark'>
-      <img src={graphic} alt="" className='md:-mb-4 max-w-[900px]' />
+      <img src={graphic} alt="" className='md:-mb-4 max-w-[900px] w-[90%]' />
       <div className='flex flex-col items-center justify-center gap-6'>
         <img src={logo} alt="Logo pakebareng.id" className='w-[60%] max-w-[271px]' />
         <div className='text-white'>
