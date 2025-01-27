@@ -14,7 +14,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-dark border-gray-200 w-full h-[60px] sm:h-[75px] sticky top-0 z-50">
+    <nav className="bg-dark border-gray-200 w-full h-[60px] sm:h-[75px] fixed top-0 z-50">
       <div className="w-full h-full px-6 mx-auto sm:px-16">
         <div className="flex items-center justify-between h-full">
           <div className="flex-shrink-0 cursor-pointer">

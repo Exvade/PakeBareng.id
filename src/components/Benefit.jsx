@@ -55,11 +55,9 @@ function BenefitCard({ title, description, icon, mainColor, shadowColor }) {
 
 export default function BenefitsSection() {
   return (
-    <section className="w-full bg-dark py-12 px-4 md:px-6">
+    <section className="w-full px-4 py-12 bg-dark md:px-6">
       <div className="flex flex-col items-center max-w-6xl mx-auto">
-        <div className="w-[490px]">
-          <h2 className="mb-8 text-2xl font-semibold text-center text-white md:text-3xl hover:shadow-green hover:shadow-custom-light hover:px-3 hover:scale-102 hover:-rotate-1 transition duration-500">Kenapa harus pakebareng.id?</h2>
-        </div>
+        <h2 className="mb-8 text-2xl font-semibold text-center text-white md:text-3xl">Kenapa harus pakebareng.id?</h2>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           {benefitCards.map((card, index) => (
             <BenefitCard key={index} {...card} />

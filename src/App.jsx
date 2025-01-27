@@ -1,16 +1,18 @@
-import Navbar from './components/Navbar';
 import About from './components/About';
 import BenefitsSection from './components/Benefit';
-import ProductCard from './components/ProductCard.jsx';
 import CallToAction from './components/CallToAction';
-import Testimoni from './components/Testimoni';
 import FAQ from './components/Faq';
 import Footer from './components/Footer';
+import Homepage from './components/Homepage.jsx';
+import Navbar from './components/Navbar';
+import ProductCard from './components/ProductCard.jsx';
+import Testimoni from './components/Testimoni';
 
 function App() {
   return (
-    <>
+    <div className='bg-dark'>
       <Navbar />
+      <Homepage />
       <About />
       <BenefitsSection />
       <ProductCard />
@@ -18,7 +20,7 @@ function App() {
       <Testimoni />
       <FAQ />
       <Footer />
-    </>
+    </div>
   );
 }
 
