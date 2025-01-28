@@ -20,7 +20,7 @@ export default function Navbar() {
           <div className="flex-shrink-0 cursor-pointer">
             <img src={logo} className="h-5 sm:h-7" alt="Logo Pakebareng" />
           </div>
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <ul className="flex space-x-10 text-sm text-white sm:text-base">
               <li>
                 <a href="/" className="hover:text-green">
@@ -49,7 +49,7 @@ export default function Navbar() {
               </li>
             </ul>
           </div>
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <div className="flex items-center space-x-3 ">
               <button className="group relative flex flex-row items-center px-6 py-2 rounded-full text-xs sm:text-sm bg-[#324a54] text-white cursor-pointer duration-300 overflow-hidden hover:bg-[#233941]">
                 <div className="absolute inset-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
@@ -62,12 +62,12 @@ export default function Navbar() {
             </div>
           </div>
 
-          <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="p-2 text-white md:hidden">
+          <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="p-2 text-white lg:hidden">
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
-        <div className={`md:hidden absolute left-0 right-0 bg-dark px-6 py-4 transition-all duration-300 ease-in-out z-50 ${isMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2 pointer-events-none'}`}>
+        <div className={`lg:hidden absolute left-0 right-0 bg-dark px-6 py-4 transition-all duration-300 ease-in-out z-50 ${isMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2 pointer-events-none'}`}>
           <ul className="flex flex-col space-y-4 text-white">
             <li>
               <a href="/" className="hover:text-green">
