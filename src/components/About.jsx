@@ -2,7 +2,7 @@ import aboutusImg from '/aboutus.png';
 
 export default function FAQ() {
   return (
-    <section id="faq" className="relative z-50 w-full px-4 py-12 -mt-48 md:px-6 md:-mt-96">
+    <section id="faq" className="relative z-50 w-full px-4 py-12 -mt-48 md:px-6 lg:-mt-96">
       <div className="flex flex-col items-center justify-center max-w-3xl gap-5 mx-auto md:flex-row md:gap-14">
         <div className="block w-[45%] md:w-[25%]">
           <img src={aboutusImg} alt="" className="w-full" />

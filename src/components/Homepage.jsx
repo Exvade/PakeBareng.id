@@ -20,7 +20,7 @@ export default function Homepage() {
       <img src={perplexity} alt="canva" className='w-[20px] absolute right-[75px] top-[210px] md:w-[60px] md:right-[150px] md:top-[368px]  2xl:right-[300px]' />
       <img src={capcut} alt="canva" className='w-[20px] absolute right-[21px] top-[281px] md:w-[60px] md:right-[50px] md:top-[543px]  2xl:right-[100px]' />
       <div className="container relative flex flex-col items-center justify-center px-4 pt-20 pb-32 mx-auto">
-        <h1 className="w-[85%] max-w-[840px] font-bold text-center text-white text-[20px] md:text-[54px]">Nikmatin Layanan Premium Bersama, Hemat Biaya, Tanpa Berduka</h1>
+        <h1 className="w-[85%] max-w-[840px] font-bold text-center text-white text-[20px] lg:text-[54px] sm:text-4xl sm:leading-[40px] md:leading-[60px] md:text-[42px]">Nikmatin Layanan Premium Bersama, Hemat Biaya, Tanpa Berduka</h1>
         <div className="w-full max-w-4xl mt-4 md:mt-8">
           <img
             src={sectionImage}
